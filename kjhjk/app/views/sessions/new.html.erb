@@ -1,0 +1,50 @@
+<h2>Sign in  new </h2>
+
+<%= error %>
+<%= form_tag(user_session_path, :action =>'userlocation') %>
+
+<table>
+<tr>
+<p>0 for fb nd 1 for others
+<td>Logintype: </td>
+<td><%=text_field_tag :logintype %></td>
+</tr>
+
+<tr>
+<td>Username : </td>
+<td><%=text_field_tag :username %></td>
+</tr>
+
+<tr>
+<td>Email : </td>
+<td><%=email_field_tag :email %></td>
+</tr>
+
+<tr>
+<td>Password : </td>
+<td><%=password_field_tag :password %></td>
+</tr>
+
+<tr>
+<td>Fb_Id: </td>
+<td><%=text_field_tag :fbid %></td>
+</tr>
+<tr>
+<td>Fb_Access_Token: </td>
+<td><%=text_field_tag :fbaccesstoken %></td>
+</tr>
+<tr>
+<td>Device_type : </td>
+<td><%=text_field_tag :devicetype %></td>
+</tr>
+<tr>
+<td>Device_token : </td>
+<td><%=text_field_tag :devicetoken %></td>
+</tr>
+</tr>
+<tr>
+<td><%= submit_tag "sign in", :class => "form_submit"%></td>
+</tr>
+</table>
+<br />
+<%= render :partial => "devise/shared/links" %>

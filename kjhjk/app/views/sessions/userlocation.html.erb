@@ -1,0 +1,14 @@
+<h3>Give YOUR location</h3>
+<br/>
+<br/>
+
+<%= form_tag(controller: "sessions", action: "display") do %>
+    <%= label_tag(:longitude, "longitude") %>
+    <%= text_field_tag(:longitude) %><br>
+    <%= label_tag(:latitude, "latitude") %>
+    <%= text_field_tag(:latitude) %><br>
+
+
+
+    <%= submit_tag("submit")%>
+<% end %>

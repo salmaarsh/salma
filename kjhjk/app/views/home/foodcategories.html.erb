@@ -1,0 +1,23 @@
+
+ 
+<table>
+  <tr>
+    <th>List of cuisines</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+ 
+<% @user.each do |foodcategory| %>
+  <tr>
+    <td><%= foodcategory.foodname %></td>
+    <td><%= foodcategory.rest_id %></td>
+    
+    
+     <td> <%= link_to "order",show_fooditem_path %></td>
+  </tr>
+<% end %>
+</table>
+ 
+<br>

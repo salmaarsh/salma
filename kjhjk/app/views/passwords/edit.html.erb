@@ -1,0 +1,23 @@
+<h2>Change your password here </h2>
+
+<%= form_tag({controller: "passwords", action: "update"},:method=>"patch") do %>
+ <%= label_tag(:password, "passwords") %>
+ <%= password_field_tag(:password) %><br>
+ 
+  <%= label_tag(:password_confirmation, "confirm password") %>
+ <%= password_field_tag(:password_confirmation) %><br>
+ 
+  <%= hidden_field_tag :reset_password_token,params['reset_password_token'] %>
+
+  <%= submit_tag("reset password")%>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+
+
+
+
+
+
+

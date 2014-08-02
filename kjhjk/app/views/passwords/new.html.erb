@@ -1,0 +1,13 @@
+<h3>Signup </h3>
+<%= notice %>
+<br/>
+<br/>
+
+<%= form_tag(controller: "passwords", action: "create") do %>
+<%= label_tag(:email, "email") %>
+<%= email_field_tag(:email) %><br>
+
+
+
+<%= submit_tag("send me password reset instructions")%>
+<% end %>

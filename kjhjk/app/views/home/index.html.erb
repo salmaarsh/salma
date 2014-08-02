@@ -1,0 +1,27 @@
+<% if user_signed_in? %>
+
+<h3>you have succesfully signed in</h3>
+<%= link_to "Sign Out", destroy_user_session_path, :method => :delete %>
+
+<% else %>
+
+<h1> welcom to rails community</h1>
+<%= link_to "Sign In", new_user_session_path, :method => :get %>
+<%= link_to "Sign up", new_user_registration_path, :method => :get %>
+
+<% end %>
+
+<h3>Give YOUR location</h3>
+<br/>
+<br/>
+
+<%= form_tag(controller: "home", action: "display") do %>
+    <%= label_tag(:lng, "longitude") %>
+    <%= text_field_tag(:lng) %><br>
+    <%= label_tag(:lat, "latitude") %>
+    <%= text_field_tag(:lat) %><br>
+
+
+
+    <%= submit_tag("submit")%>
+<% end %>

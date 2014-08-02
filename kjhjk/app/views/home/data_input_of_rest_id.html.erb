@@ -1,0 +1,7 @@
+<h1>gfrgtt</h1>
+<%= form_tag(controller: "home", action: "foodcategories" ) do %>
+<%= label_tag(:rest_id, "enter restaurant id ") %>
+<%= text_field_tag(:rest_id) %><br>
+
+<%= submit_tag("submit")%>
+<%end%>

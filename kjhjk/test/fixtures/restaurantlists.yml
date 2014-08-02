@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  restaurantname: MyString
+  address: MyString
+  city: MyString
+  longitude: 1.5
+  latitude: 1.5
+
+two:
+  restaurantname: MyString
+  address: MyString
+  city: MyString
+  longitude: 1.5
+  latitude: 1.5
